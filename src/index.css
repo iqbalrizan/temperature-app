@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+section {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.app-container {
+  height: 500px;
+  width: 300px;
+  background: #ffedcf;
+  border-radius: 20px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.temperature-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+.temperature-display {
+  display: flex;
+  border-radius: 50%;
+  color: #090909;
+  height: 220px;
+  width: 220px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  border: 3px #ffffff solid;
+  transition: background 1s;
+}
+
+button {
+  border-radius: 100px;
+  height: 80px;
+  width: 80px;
+  font-size: 32px;
+  color: #ffffff;
+  background: rgb(105, 104, 104);
+  border: 2px #ffffff solid;
+}
+
+button:hover {
+  background: rgb(184, 184, 184);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.neutral {
+  background: rgb(184, 184, 184);
+}
+
+.cold19 {
+  background: #5682aa;
+}
+.cold17 {
+  background: #3874a9;
+}
+.cold15 {
+  background: #224d72;
+}
+.cold13 {
+  background: #043e70;
+}
+.cold11 {
+  background: #022d53;
+}
+.cold {
+  background: #035aa6;
+}
+
+.hot {
+  background: #ff5200;
+}
+.hot29 {
+  background-color: #ff0000;
+}
+.hot27 {
+  background-color: #ff4400;
+}
+.hot25 {
+  background-color: #ff6200;
+}
+.hot23 {
+  background-color: #ffae00;
+}
+.hot21 {
+  background-color: #fff200;
+}
+.bghot {
+  background-image: url("./images/img1.jpg");
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
+}
+.bghottest {
+  background-image: url("./images/img5.jpg");
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
+}
+.bgcold {
+  background-image: url("./images/img6.jfif");
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
+}
+.bgcoldest {
+  background-image: url("./images/img4.jpg");
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
+}
+.bgnetral {
+  background-image: url(./images/img3.jpg);
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
 }
